@@ -87,7 +87,11 @@ public class PatchSelector extends Activity implements OnItemClickListener {
 		super.onStart();
 		Log.d("PatchSelector", "+ onStart");
 		final Intent intent = getIntent();
-		if (intent != null && intent.getAction().equals(Intent.ACTION_VIEW)) {
+		Log.d("PatchSelector", "Intent.ACTION_VIEW="+Intent.ACTION_VIEW);
+		Log.d("PatchSelector", "intent="+intent);
+		Log.d("PatchSelector", "intent.getAction()="+intent.getAction());
+		//		if (intent != null && intent.getAction().equals(Intent.ACTION_VIEW)) {
+		if (intent != null) { // how to inspect for ACTION_VIEW?
 			 Log.d("PatchSelector", "> Got intent : " + intent);
 			 final Uri data = intent.getData();
 			 if (data != null) {

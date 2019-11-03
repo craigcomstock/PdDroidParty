@@ -21,6 +21,11 @@ You can push the existing test suite and the demos to your device's sdcard using
 	./push-tests-to-sdcard
 	./push-demos-to-sdcard
 
+Building
+--------
+git submodule update --init --recursive
+./gradlew build
+
 Copyright
 ---------
 
